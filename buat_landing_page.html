@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            text-decoration: none;
+        }
+
+        nav.pertama {
+            margin-top: 35px;
+            width: 100%;
+            height: 50px;
+
+            display: flex;
+            gap: 150px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        nav.pertama ul {
+            font-size: 25px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+
+        }
+
+        .bicara {
+            justify-content: space-between;
+            font-size: 25px;
+            text-decoration: none;
+        }
+
+        .main {
+            margin-top: 35px;
+            width: 100%;
+            height: 600px;
+
+
+        }
+
+        .logo {
+            margin-left: 20px;
+            height: 50px;
+            width: 50px;
+        }
+
+        .background {
+            width: 100%;
+            height: 600px;
+        }
+
+        .pendaki {
+
+            position: absolute;
+            top: 350px;
+            right: 200px;
+            width: 300px;
+            filter: drop-shadow(2px 4px 25px black);
+        }
+
+        .tulisan {
+            color: aliceblue;
+            left: 100px;
+            position: absolute;
+            top: 250px;
+            height: 400px;
+            width: 300px;
+        }
+
+        .contact {
+            font-size: 12px;
+            border-radius: 25px;
+            left: 100px;
+            bottom: 75px;
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            color: aliceblue;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            font-weight: bold;
+        }
+
+        .judul {
+            background: linear-gradient(to bottom, #FF512F, #F09819, #FFDD55);
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 22px;
+        }
+
+
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .fasilitas {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+            margin-top: 30px;
+        }
+
+
+
+        .fitur {
+            background: linear-gradient(to bottom, #FFE29F, #FFA99F, #FF719A);
+
+            padding: 50px 20px;
+            text-align: center;
+            color: #222;
+        }
+
+        .fitur h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .fitur-container {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fitur-box {
+            width: 190px;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .fitur-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .fitur-box h3 {
+            margin-bottom: 10px;
+            font-size: 22px;
+            color: #333;
+        }
+
+
+        .image-feature {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .image-box {
+
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform .3s;
+            cursor: pointer;
+        }
+
+        .image-box:hover {
+            transform: scale(1);
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100px;
+            display: block;
+        }
+
+
+        @media(max-width: 768px) {
+            .fasilitas {
+                grid-template-columns: 3fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="pertama">
+        <img src="r.avif" class="logo" alt="Brand Logo">
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>About us</li>
+            <li>Contact Us</li>
+        </ul>
+        <div class="bicara">lets'talk</div>
+    </nav>
+
+    <div class="main">
+        <img src="bromo.jpg" class="background" alt="">
+        <img src="pendakian-removebg-preview.png" class="pendaki " alt="">
+        <div class="tulisan"><b>PERJALANAN KE BROMO</b>
+            <div><br>
+                Gunung Bromo adalah destinasi wisata yang wajib dikunjungi bagi siapa pun
+                yang menyukai keindahan alam dan petualangan. Di sini, pengunjung dapat menyaksikan
+                matahari terbit yang sangat menakjubkan, dengan cahaya emas yang perlahan muncul di balik pegunungan.
+                Hamparan lautan pasir yang luas dan sejuknya udara pagi membuat pengalaman berada di Bromo semakin
+                berkesan.
+                Selain itu, perjalanan menggunakan jeep menuju kawah memberikan sensasi seru yang tidak terlupakan.
+                Bromo adalah pilihan tepat untuk liburan keluarga, rombongan sekolah, maupun wisata fotografi.
+                Jangan lewatkan kesempatan merasakan keindahan alam Indonesia yang luar biasa di Bromo.</div>
+        </div>
+        <div class="contact">
+            <a href=""> CONTACT US</a>
+
+        </div>
+    </div>
+
+    <header class="judul">
+        Fasilitas Wisata Gunung Bromo
+    </header>
+
+    <div class="container">
+        <h2>3 Fasilitas Utama di Bromo</h2>
+
+        <div class="fasilitas">
+
+            <div class="card">
+                <img src="jeep bromo.jpg" alt="Jeep Bromo">
+                <h3>Sewa Jeep</h3>
+                <p>Fasilitas transportasi utama untuk menuju spot sunrise dan padang pasir.</p>
+            </div>
+
+            <div class="card">
+                <img src="bromo-sunrise.jpg" alt="Sunrise Bromo">
+                <h3>View Sunrise</h3>
+                <p>Menikmati pemandangan matahari terbit yang sangat menakjubkan.</p>
+            </div>
+
+            <div class="card">
+                <img src="kuda bromo.jpg" alt="Kuda Bromo">
+                <h3>Sewa Kuda</h3>
+                <p>Alternatif menuju kawah Bromo tanpa harus berjalan kaki jauh.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <section class="fitur">
+        <h2>Wisata Utama di Bromo</h2>
+
+        <div class="fitur-container">
+            <div class="image-feature">
+                <div class="fitur-box">
+                    <div class="image-box">
+                        <img src="lautan pasir bromo.jpg" alt="Kuda Bromo">
+                    </div>
+                    <h3>Lautan Pasir (Whispering Sand)</h3>
+                    <p>Hamparan pasir luas seperti gurun—unik karena satu-satunya di Indonesia..</p>
+                </div>
+
+                <div class="fitur-box">
+                    <div class="image-box">
+                        <img src="bukit teletubies.jpg" alt="Kuda Bromo">
+                    </div>
+                    <h3>Bukit Teletubbies</h3>
+                    <p>Bukit hijau melengkung yang menyerupai lanskap film Teletubbies.</p>
+                </div>
+
+                <div class="fitur-box">
+                    <div class="image-box">
+                        <img src="Pura Luhur Poten.jpg" alt="Kuda Bromo">
+                    </div>
+                    <h3>Pura Luhur Poten</h3>
+                    <p>Sebuah pura besar tepat di tengah lautan pasir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 Wisata Bromo.
+    </footer>
+</body>
+
+</html>
